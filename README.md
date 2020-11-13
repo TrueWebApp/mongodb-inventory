@@ -62,7 +62,10 @@ To replace default inventory just add groups `all` and `ungrouped` to your mongo
 }
 ```
 
-### 4. Enable script
+### 4. Install pymongo
+`python3 -m pip install pymongo`
+
+### 5. Enable script
 Add [mongo.py](https://gitlab.com/true-web-app/ci-cd/mongodb-inventory/-/blob/master/mongo.py) file in your `hosts` directory or set it as a inventory directly via `ansible-playbook your_playbook.yml -i mongo.py`
 
 #### Done :)
