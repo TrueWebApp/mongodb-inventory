@@ -22,7 +22,7 @@ Group object example:
     ],
     "hosts": [
         "192.168.28.71",
-        "192.168.28.72"
+        "dns.google.com"
     ],
     "vars": {
         "ansible_ssh_user": "no_root",
