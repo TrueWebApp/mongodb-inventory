@@ -64,6 +64,6 @@ Just add groups `all` and `ungrouped` to groups in your database:
 ```
 
 ### 4. Enable script
-Add `mongo.py` in your `hosts` directory or set it as a inventory directly via `ansible-playbook your_playbook.yml -i mongo.py`
+Add [mongo.py](https://gitlab.com/true-web-app/ci-cd/mongodb-inventory/-/blob/master/mongo.py) file in your `hosts` directory or set it as a inventory directly via `ansible-playbook your_playbook.yml -i mongo.py`
 
 #### Done :)
