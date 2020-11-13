@@ -43,13 +43,12 @@ Host object example:
 ```
 
 ### 3. Is it default inventory?
-To replace default inventory you don't need everytime add your groups to `all`
+To replace default inventory just add groups `all` and `ungrouped` to your mongo inventory.
 
-Just add groups `all` and `ungrouped` to groups in your database:
 ```json
 {
     "name" : "all",
-    "children" : ["ungrouped"],
+    "children" : ["ungrouped"],  # don't forget to add other high-level groups here
     "vars" : {}
 }
 ```

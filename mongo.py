@@ -58,15 +58,6 @@ def _prepare(data: dict):
     return {k: v for k, v in data.items() if k not in ('_id', 'name')}
 
 
-def add_all(groups: dict):
-    group_all = groups.get('all')
-    if not group_all:
-        return
-    children = group_all.get('children')
-    if isinstance(children, list):
-        children.append(*[name for name in groups.keys() if name != 'all'])
-
-
 if __name__ == "__main__":
     result = main()
     print(json.dumps(result))
