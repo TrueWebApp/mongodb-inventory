@@ -28,7 +28,7 @@ def main():
     if args.list:
         return get_inventory()
     if args.host:
-        return get_host(args.hostname)
+        return get_host(args.host[0])
     return {}
 
 
@@ -43,7 +43,7 @@ def get_inventory():
 def get_host(name):
     """ Get dict with one host variables. """
     col = db.get_collection('hosts')
-    data = col.find_one({'name': name})
+    data = col.find_one({'name': name}) or {}
     return _prepare(data)
 
 
